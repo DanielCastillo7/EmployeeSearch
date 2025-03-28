@@ -21,3 +21,8 @@ int searchByName(Employee e, void* key) {
 int searchByPhone(Employee e, void* key) {
     return strcmp(e.phone, (char*)key) == 0;
 }
+
+//Add search by salary using a function pointer
+int searchBySalary(Employee e, void* key) {
+    return e.salary == *(double*)key;
+}
