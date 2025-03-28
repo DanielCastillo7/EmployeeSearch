@@ -25,5 +25,9 @@ int main() {
     printf("Searching by Phone:\n");
     searchEmployee(employees, 3, phoneKey, searchByPhone);
 
+    double salaryKey = 55000.0;
+    printf("Searching by Salary:\n");
+    searchEmployee(employees, 3, &salaryKey, searchBySalary);
+
     return 0;
 }
